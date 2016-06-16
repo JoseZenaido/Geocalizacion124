@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Routes Example</title>
+
+<link href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css" 
+rel="stylesheet" type="text/css" />
+
+<script type="text/javascript"
+src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+<script type="text/javascript"
+src="js/Geocalizacion.js"></script> 
+
+</head>
+<body onload="initialize()">
+<div>
+<strong>START:</strong>
+<select id="start" onchange="calcRoute();">
+	<option value="Tampico, Tamaulipas, Mexico">Tampico</option>
+	<option value="Mexico City, Distrito Federal, Mexico">Mexico City</option>
+	<option value="Veracruz, Veracruz-Llave, Mexico">Veracruz</option>
+	<option value="Cancun, Quintana Roo, Mexico">Cancun</option>
+	<option value="Acapulco, Guerrero, Mexico">Acapulco</option>
+	<option value="Guadalajara, Jalisco, Mexico">Guadalajara</option>
+	<option value="Aguascalientes, Aguascalientes, Mexico">Aguascalientes</option>
+	<option value="Zacatecas, Zacatecas, Mexico">Zacatecas</option>
+	<option value="Durango, Durango, Mexico">Durango</option>
+	<option value="Ciudad Victoria, Tamaulipas, Mexico">Ciudad Victoria</option>
+	<option value="Matamoros, Tamaulipas, Mexico">Matamoros</option>
+	<option value="Monterrey, Nuevo Leon, Mexico">Monterrey</option>
+	<option value="Hermosillo, Sonora, Mexico">Hermosillo</option>
+		
+</select>
+<strong>END:</strong>
+<select id="end" onchange="calcRoute();">
+	<option value="Tampico, Tamaulipas, Mexico">Tampico</option>
+	<option value="Mexico City, Distrito Federal, Mexico">Mexico City</option>
+	<option value="Veracruz, Veracruz-Llave, Mexico">Veracruz</option>
+	<option value="Cancun, Quintana Roo, Mexico">Cancun</option>
+	<option value="Acapulco, Guerrero, Mexico">Acapulco</option>
+	<option value="Guadalajara, Jalisco, Mexico">Guadalajara</option>
+	<option value="Aguascalientes, Aguascalientes, Mexico">Aguascalientes</option>
+	<option value="Zacatecas, Zacatecas, Mexico">Zacatecas</option>
+	<option value="Durango, Durango, Mexico">Durango</option>
+	<option value="Ciudad Victoria, Tamaulipas, Mexico">Ciudad Victoria</option>
+	<option value="Matamoros, Tamaulipas, Mexico">Matamoros</option>
+	<option value="Monterrey, Nuevo Leon, Mexico">Monterrey</option>
+	<option value="Hermosillo, Sonora, Mexico">Hermosillo</option>		
+</select>
+
+</div>
+<h3>Distance: <strong id="distance">0</strong> km.</h3>
+
+	<div id="map-canvas"></div>
+
+</body>
+</html>
